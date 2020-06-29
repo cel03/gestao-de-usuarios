@@ -1,6 +1,9 @@
 run:
 	python manage.py runserver
 
+mysql-setup:
+	docker pull mysql/mysql-server:5.7
+
 mysql-run:
 	docker run --name gestao_usuario \
 		-e MYSQL_ROOT_PASSWORD=myrootpassword \
