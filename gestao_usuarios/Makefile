@@ -1,8 +1,12 @@
+setup: python-setup mysql-setup
+
+python-setup:
+	pip install -r requirements.txt
 run:
 	python manage.py runserver
 
 mysql-setup:
-	docker pull mysql/mysql-server:5.7
+	docker pull mysql:5.7
 
 mysql-run:
 	docker run --name gestao_usuario \
