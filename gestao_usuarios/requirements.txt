@@ -1,5 +1,5 @@
 configparser==5.0.0
-Django==2.2
+Django==2.2.13
 django-cors-headers==3.4.0
 django-mysql==3.7.1
 djangorestframework==3.11.0
